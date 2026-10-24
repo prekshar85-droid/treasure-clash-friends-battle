@@ -1,6 +1,6 @@
 import React,{useEffect,useMemo,useRef,useState} from 'react';
 import {createRoot} from 'react-dom/client';
-import './style.css';
+import '../style.css';
 const icons={coin:'🪙',gem:'💎',chest:'🎁',power:'⚡',rock:'🪨',empty:''};
 function App(){
  const [name,setName]=useState('Captain');const [code,setCode]=useState('');const [state,setState]=useState(null);const [myId,setMyId]=useState('');const [err,setErr]=useState('');const [sound,setSound]=useState(true);const [tutorial,setTutorial]=useState(false);const [socketStatus,setSocketStatus]=useState('offline');const ws=useRef(null);const audio=useRef(null);
